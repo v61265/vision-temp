@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>願景工程</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+
+  <style>
+      .container {
+          max-width: 600px;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 16px;
+          line-height: 150%;
+          letter-spacing: 0.01em;
+          color: rgba(0, 0, 0, 0.66);
+          font-family: Noto Sans CJK TC;
+          margin: 0 20px;
+          display: flex;
+          flex-direction:column; 
+          align-items: center;
+      }
+      img {
+          width: 200px;
+      }
+      .vision__description {
+          margin-top: 50px;
+      }
+      .orange {
+          color: #ED8B00;
+      }
+      .loading {
+          margin-top: 40px;
+      }
+      .loading__desc {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 140%;
+        color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+      }
+      .loading__container {
+          width: 220px;
+          height: 32px;
+          border: 1px solid #ED8B00;
+          box-sizing: border-box;
+          border-radius: 2px;
+          margin-top: 8px;
+
+      }
+      .loading__item {
+          background-color: #ED8B00;
+          border-radius: 2px;
+          width: 32px;
+          height: 24px;
+          transform: translate(3px, 3px);
+          animation-name: example;
+          animation-duration: 4s;
+          animation-iteration-count: infinite;
+          box-sizing: border-box;
+      }
+      a {
+        font-size: 16px;
+        line-height: 130%;
+        color: rgba(0, 0, 0, 0.5);
+        padding: 16px 45px;
+        background: #F5F4F3;
+        border-radius: 2px;
+        margin-top: 60px;
+      }
+      @keyframes example {
+        from {width: 32px;}
+        to {width: 212px;}
+    }
+  </style>
+</head>
+
+<body>
+<div class='vision container'>
+    <img src='./assets/logo.png'>
+    <div class='vision__description'>
+        「努力讓台灣更好」是願景工程十年前成立的宗旨，我們希望透過願景工程的每個報導和行動，都能促成台灣一點一滴的正向改變。</br>
+        </br>
+        為了讓影響力能夠持續擴大，我們去年轉型成立了「財團法人願景工程基金會」，邀請行政院前院長陳冲先生出任董事長，希望透過公共化，讓願景工程走出聯合報系，擴大與廣大的社會力量結合。</br>
+        </br>
+        2022年我們新的願景是：「為改變發聲，讓改變發生」。</br>
+        </br>
+        <span class='orange'>全新官網即將上線，敬請期待！</span>
+    </div>
+    <div class='vision__loading loading'>
+        <div class='loading__desc'>努力製作中><...</div>
+        <div class='loading__container'><div class='loading__item'></div></div>
+    </div>
+    <a>先去願景工程舊家</a>
+</div>
+</body>
+</html>
