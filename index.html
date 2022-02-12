@@ -61,7 +61,7 @@
           width: 32px;
           height: 24px;
           transform: translate(3px, 3px);
-          animation-name: example;
+          animation-name: loading;
           animation-duration: 6s;
           animation-iteration-count: infinite;
           box-sizing: border-box;
@@ -80,10 +80,30 @@
           cursor: pointer;
           color: rgba(0, 0, 0, 0.66);
       }
-      @keyframes example {
+      #dot1 {
+        animation-name: dot1;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+      }
+      #dot2 {
+        animation-name: dot2;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes loading {
         from {width: 32px;}
         to {width: 212px;}
-    }
+      }
+      @keyframes dot1 {
+        0% { visibility: hidden;}
+        32% { visibility: hidden;}
+        33% { visibility: visible;}
+      }
+      @keyframes dot2 {
+        0% { visibility: hidden;}
+        65% { visibility: hidden;}
+        66% { visibility: visible;}
+      }
   </style>
 </head>
 
@@ -100,7 +120,7 @@
         <span class='orange'>全新官網即將上線，敬請期待！</span>
     </div>
     <div class='vision__loading loading'>
-        <div class='loading__desc'>努力製作中><...</div>
+        <div class='loading__desc'>努力製作中><.<span id='dot1'>.</span><span id='dot2'>.</span></div>
         <div class='loading__container'><div class='loading__item'></div></div>
     </div>
     <a href="https://vision.udn.com/vision/index">先去願景工程舊家</a>
